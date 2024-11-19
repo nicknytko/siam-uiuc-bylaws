@@ -80,25 +80,25 @@
 %%
 % article title class
 \titleclass\article{straight}[\part]
-\titleformat{\article}[hang]{\bfseries\MakeUppercase}{\thearticle}{1.5em}{}
+\titleformat{\article}[hang]{\bfseries\MakeUppercase}{Article \Roman{article}}{1.5em}{}
 % cf https://tex.stackexchange.com/a/414239
 \titlecontents{article}[0pt]{\normalfont\normalsize}{\thecontentslabel \quad}{}{\enspace\titlerule\contentspage}
 \titlespacing*{\article}{0mm}{*4}{*2.3}[0mm]
 \newcounter{article}
 % \thearticle referenced by \ref
 % cf https://tex.stackexchange.com/a/242264
-\renewcommand\thearticle{Article \Roman{article}}
+\renewcommand\thearticle{\Roman{article}}
 
 \makeatletter
 \@addtoreset{section}{article}
 \makeatother
 
 % section title class
-\titleformat{\section}[block]{\normalfont\scshape}{\thesection}{1.5em}{}
+\titleformat{\section}[block]{\normalfont\scshape}{\S \arabic{section}}{1.5em}{}
 \titlespacing*{\section}{12pt}{1ex}{1em}
 % \thesection referenced by \ref
 % cf https://tex.stackexchange.com/a/242264
-\renewcommand{\thesection}{\S \arabic{section}}
+\renewcommand{\thesection}{\arabic{section}}
 
 %% cf https://tex.stackexchange.com/a/357861
 % indentation for articles

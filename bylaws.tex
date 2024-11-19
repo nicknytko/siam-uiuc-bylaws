@@ -2,7 +2,8 @@
 
 \documentclass{ronr-bylaws}
 
-\usepackage{lipsum}
+\newcommand{\refsection}[2]{Article \ref{#1} \S \ref{#2}}
+\newcommand{\refarticle}[1]{Article \ref{#1}}
 
 \author{Nicolas Nytko}
 
@@ -20,7 +21,7 @@
 \newpage
 %
 \maketitle
-This Rules of Procedure (hereinafter called ``Rules'') apply to the Society for Industrial and Applied Mathematics (``SIAM'') Student Chapter, named the ``University of Illinois Urbana-Champaign Chapter of Society for Industrial and Applied Mathematics''.  Hereinafter, ``SIAM'' or ``Society for Industrial and Applied Mathematics'' will refer to the parent organization, while ``the Chapter'' will refer to the student chapter/organization.
+This Rules of Procedure (hereinafter called ``Rules'') apply to the Society for Industrial and Applied Mathematics (``SIAM'') Student Chapter, named the ``University of Illinois Urbana-Champaign Chapter of Society for Industrial and Applied Mathematics''.  Hereinafter, ``SIAM'' or ``Society for Industrial and Applied Mathematics'' will refer to the parent organization, whilst ``the Chapter'' will refer to the student chapter/organization.
 
 The Chapter to which these Rules apply is formed by the Society for Industrial and Applied
 Mathematics and shall operate within the Bylaws of the parent organization. The SIAM bylaws
@@ -85,21 +86,26 @@ Termination of student membership shall take place upon graduation or withdrawal
 from the University of Illinois Urbana-Champaign.
 %
 \article{Sponsorship}
-The executive committee of the chapter shall appoint a Faculty Advisor for the Chapter.  The Advisor must be a member in good standing with SIAM. In the event said Advisor relinquishes his/her position, the Sponsor shall appoint a new Advisor.  The responsibilities, rights and duties of the Faculty Advisor shall be those normally assigned to the Faculty Advisor of student organizations of the Sponsor, but in addition, the Faculty Advisor is expected to take leading role in the development of the Chapter activities consistent with the objectives of SIAM.
+\section{Sponsor}
+The Chapter is a registered student organization (RSO) of the University of Illinois Urbana-Champaign.  The Chapter and its operations are not, however, directly sponsored by the university.
+
+\section{Faculty Advisor}
+The executive committee of the chapter shall appoint a Faculty Advisor for the Chapter.  The Advisor must be a member in good standing with SIAM. In the event said Advisor relinquishes his/her position, a new Advisor shall be appointed.  The responsibilities, rights and duties of the Faculty Advisor shall be those normally assigned to the Faculty Advisor of student organizations of the University, but in addition, the Faculty Advisor is expected to take leading role in the development of the Chapter activities consistent with the objectives of SIAM.
 %
-\article{Officers}
+\article{Officers}\label{article:officers}
+\section{Officer Roles}\label{section:officer_roles}
 The Chapter shall have a President, a Vice-President, a Secretary and a Treasurer. Officers shall be chosen from Student Members of the Chapter and must  be Student Members in good standing with SIAM.
 
-\section{President}
-The President shall preside at the meetings of the Chapter (and the Chapter Executive Committee (see Article VII below)).  In the absence of the President, the Vice-President shall assume the duties of the President.  In the absence of the latter, the Secretary shall assume said duties.
+\section{President}\label{section:president}
+The President shall preside at the meetings of the Chapter (and the Chapter Executive Committee, see \refarticle{article:executive_committee}).  In the absence of the President, the Vice-President shall assume the duties of the President.  In the absence of the latter, the Secretary shall assume said duties.
 
-\section{Secretary}
+\section{Secretary}\label{section:secretary}
 The Secretary shall keep a record of the affairs of the Chapter, handle correspondence, and submit an annual report of Chapter activities to the Secretary of SIAM, which report shall be suitable for publication in SIAM News or its equivalent.
 
-\section{Treasurer}
+\section{Treasurer}\label{section:treasurer}
 The Treasurer shall receive and take custody of Chapter funds, and shall submit an annual Treasurer's Report and other financial reports, as requested, to the Treasurer of SIAM.  The annual Treasurer's Report shall be prepared as of the end of the academic year and shall be transmitted to the Treasurer of SIAM by no later than 30 days following the end of the academic year.
 
-\section{Officer Elections}
+\section{Officer Elections}\label{section:officer_elections}
 Officer elections shall be held at a regularly scheduled meeting before the end of the
 Spring Semester. The date of the election shall be announced to all members no less than thirty
 days in advance. Early voting and voting by proxy may be permissible, given that appropriate
@@ -107,7 +113,7 @@ steps to ensure accountability are taken.
 
 Nominations for officer candidates shall be finalized no less than one week prior to the vote. The
 Chapter Secretary shall be responsible to verify all nominations are in compliance with the terms
-in Section 1.
+in \refsection{article:officers}{section:officer_roles}.
 
 The election shall be held by secret ballot prepared by the Chapter Secretary in advance. The
 Secretary shall also be responsible for tallying the votes and determining winners. The vote count
@@ -119,13 +125,14 @@ The elected term shall begin on the following August 1 and last through July 31 
 Each officer term shall last one year. An officer may be reelected to the same position,
 but no position shall be held by the same individual more than two consecutive years.
 
+\section{Early Vacation}\label{section:early_vacation}
 In the event that an officer vacates their position early, an election shall be held at the next
 scheduled meeting to select an immediate replacement. Any of the current officers may elect to
 run for the newly opened position. In the event that an officer is to fill the vacant seat, another
 election must be held to fill that officer’s newly vacated seat. Time served in a vacated position
 shall not count toward the maximum term limit.
 
-\article{Executive Committee}
+\article{Executive Committee}\label{article:executive_committee}
 \section{Committee members}
 The Chapter shall be managed by an Executive Committee consisting of the incumbent
 officers and a single member appointed by the Faculty Advisor. Any active student member of the
@@ -140,9 +147,10 @@ meetings and decisions made by the Executive Committee.
 
 \section{Vacant seats}
 Should a seat in the Executive Committee be vacated prematurely by one of the officers,
-it shall be filled following the rules in Article VI, Section 6. If the Advisor-appointed member steps down, the Advisor shall appoint a new member to the committee to serve the remainder of the term. Time served in a vacated position shall not count toward the maximum term limit.
+it shall be filled following the rules in \refsection{article:officers}{section:early_vacation}. If the Advisor-appointed member steps down, the Advisor shall appoint a new member to the committee to serve the remainder of the term. Time served in a vacated position shall not count toward the maximum term limit.
 
 \article{Other Committees}
+\section{Creation of Committees}
 To provide the Chapter with flexibility to adapt, the Executive Committee may easily
 create and dissolve committees, with the exception of itself. The official creation of a committee
 may be done by the President, Vice-President, or by a majority vote by the Executive Committee.
@@ -152,8 +160,26 @@ A committee may be organized in whatever way is deemed best to achieve its goals
 Committee may  appoint individuals to positions in a committee.
 
 Examples of possible committees include:
-\lipsum[7]
-%
+\begin{itemize}
+  \item An activities committee responsible for suggesting Chapter activities and investigating the
+    feasibility of those activities.
+  \item A committee designed to work on an upcoming event, such as Math Awareness Month activities.
+\end{itemize}
+
+The purpose of committees is to distribute responsibility to Chapter members and to give members
+an official capacity to influence the Chapter without being in the Executive Committee.
+
+\section{Nominating Committee}
+In most cases, informal nominations, including self-nominations, for officer position
+candidates shall be sufficient. However, a nominating committee may be appointed by the Executive
+Committee at its discretion. The design of this committee shall also be at the discretion of the
+Executive Committee. To ensure fairness, members may be nominated outside of the committee by
+gathering support for their nomination by petition. A successful petition must contain signatures
+from at least ten percent of the Chapter's voting members. Should the Chapter have more than
+300 voting members, a successful petition need only have thirty signatures.
+
+Any officer nominees must be eligible as stated in \refarticle{article:officers}. Regardless of the method of nomination, elections shall be conducted as detailed in \refsection{article:officers}{section:officer_elections}.
+
 \article{Meetings}
 \section{Minimum meeting count}
 There shall be a minimum of five meetings per year. Meetings times shall be announced
@@ -161,7 +187,7 @@ to all Chapter Members at least two weeks in advance. Topics related to Chapter 
 policy will be selected by the Officers in advance of the meeting, and time should be provided for
 unplanned topics to be discussed.
 
-Meetings shall be presided over as stated in Article VI, Section 2.
+Meetings shall be presided over as stated in \refsection{article:officers}{section:president}.
 
 \section{Business meetings}
 The Chapter shall conduct a business meeting once per year during the month of
@@ -185,8 +211,7 @@ The Treasurer shall maintain books of account that show income and expense items
 for all activities and balances for all accounts of the Chapter.
 
 \section{Grants or Loans}
-The Chapter may request a grant or loan from the Treasurer of SIAM under the provi-
-sion of Article XII, Chapter 8 of the Bylaws of SIAM. Such requests shall be made by submission of
+The Chapter may request a grant or loan from the Treasurer of SIAM under the provision of Article XII, Chapter 8 of the Bylaws of SIAM. Such requests shall be made by submission of
 the ``Request for Funding'' form to SIAM and include a current financial statement for the Chapter
 and a proposed budget for the requested funds.
 
